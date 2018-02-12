@@ -88,7 +88,10 @@
 (depends-on "plantuml-mode")
 
 ;; go
-(depends-on "go-mode")
-(depends-on "go-eldoc")
-(depends-on "company-go")
-(depends-on "go-rename")
+;;(depends-on "go-mode")
+;;(depends-on "go-eldoc")
+;;(depends-on "company-go")
+;;(depends-on "go-rename")
+
+;;neotree
+(depends-on "neotree")

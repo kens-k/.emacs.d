@@ -1,0 +1,33 @@
+git status 
+git branch 
+git checkout -b fix_accounting_link 
+git branch 
+cd
+cd freee-payroll/spec/
+bundle exec rspec requests/integration/yearend_adjustment_spec.rb
+cd ..
+cd ..
+bundle exec rspec spec/requests/integration/yearend_adjustment_spec.rb
+bundle install 
+pwd
+cd freee-payroll/
+pwd
+bundle exec rspec spec/requests/integration/yearend_adjustment_spec.rb
+bin/rake db:migrate RAILS_ENV=test
+bundle exec rspec spec/requests/integration/yearend_adjustment_spec.rb
+cd
+cd
+cd
+cd
+cd freee-ctax
+ls
+bundle exec rspec spec/e_reports/v201704/sheet10040200_spec.rb 
+ls
+rm payroll_link_spec.rb 
+ls
+git status 
+git branch 
+git cleanup 
+git branch 
+git branch -D kens-k-test_yoda
+git branch 
