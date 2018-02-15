@@ -31,3 +31,21 @@ git cleanup
 git branch 
 git branch -D kens-k-test_yoda
 git branch 
+git status 
+cd
+cd freee-ctax/te
+cd freee-ctax/test/
+bxr spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+/Users/honda-kensei/freee-ctax/test/lib/pages/ctax_payroll/summary/index.rb:90: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+/Users/honda-kensei/freee-ctax/test/lib/pages/ctax_payroll/summary/index.rb:90: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 
+bundle exec rspec  spec/pages/ctax_payroll/output_pdf_spec.rb 

@@ -41,6 +41,8 @@
 (define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)
 
 ;; color theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(setq custom-theme-directory "~/.emacs.d/themes")
 (load-theme 'madhat2r t)
 
 ;; ediffの設定

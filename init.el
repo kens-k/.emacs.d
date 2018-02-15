@@ -32,9 +32,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+;; '(ansi-color-names-vector
+;;   ["#6f7c80" "#d93334" "#40805b" "#b1951d" "#4f97d7" "#c24160" "#22aae1" "#c1c7c9"])
  '(ctags-update-command "ripper-tags")
  '(ctags-update-other-options
    (list "--exclude=log" "--exclude=node_modules" "--exclude=tmp" "--exclude=stories" "--exclude=*.coffee" "--exclude='.git'" "--exclude='.github'" "--exclude='.storybook'" "--exclude='.temp'" "--exclude='front'" "--exclude='app/assets'" "--exclude='.svn'" "--exclude='SCCS'" "--exclude='RCS'" "--exclude='CVS'" "--exclude='EIFGEN'" "--exclude='.#*'" "--exclude='*~'"))
+;; '(custom-safe-themes
+;;   (quote
+;;    ("79b341511cf4110965d145bf0884b0c2220e23654cece9de67837bee7960528c" "0b7ee9bac81558c11000b65100f29b09488ff9182c083fb303c7f13fd0ec8d2b" default)))
  '(package-selected-packages
    (quote
     (auto-complete-exuberant-ctags anything-exuberant-ctags yasnippet-snippets web-mode use-package smex smartparens rubocop robe rjsx-mode rbenv prodigy popwin plantuml-mode path-headerline-mode pallet package-utils nyan-mode neotree multiple-cursors markdown-mode magit madhat2r-theme init-loader idle-highlight-mode htmlize helm-projectile helm-git-grep helm-etags-plus helm-ag go-rename go-eldoc git-gutter flycheck-cask flow-minor-mode expand-region exec-path-from-shell drag-stuff ctags-update company-go company-flow coffee-mode auto-highlight-symbol))))
