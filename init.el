@@ -10,7 +10,9 @@
 
 (require 'init-loader)
 (init-loader-load)
-
+;;バックアップファイル作成しない
+(setq make-backup-files t)
+(setq auto-save-default nil)
 ;;company
 (require 'company)
 (global-company-mode)
@@ -22,7 +24,15 @@
 (define-key company-active-map (kbd "C-n") 'company-select-next)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
 (define-key company-active-map (kbd "C-h") nil)
-
+;;company色設定
+(set-face-attribute 'company-tooltip-common-selection nil
+		    :background "steelblue")
+(set-face-attribute 'company-tooltip-selection nil
+                    :background "steelblue")
+(set-face-attribute 'company-tooltip nil
+                    :background "gray40")
+(set-face-attribute 'company-tooltip-common nil
+                    :background "steelblue")
 ;;neotree
 (global-set-key "\C-q" 'neotree-toggle)
 ;; neotree ウィンドウを表示する毎に current file のあるディレクトリを表示する

@@ -229,5 +229,3 @@
 
 ;; plantUML用の設定
 (setq plantuml-jar-path "/usr/local/Cellar/plantuml/1.2017.13/libexec/plantuml.jar")
-
-
