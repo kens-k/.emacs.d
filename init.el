@@ -20,6 +20,8 @@
 ;; Ctrl-x p で逆向きへのウィンドウ移動
 (global-set-key "\C-xp" (lambda () (interactive) (other-window -1)))
 
+;; マジックコメント入れない
+(setq ruby-insert-encording-magin-comment nil)
 ;;company
 (require 'company)
 (global-company-mode)
@@ -40,6 +42,11 @@
                     :background "gray40")
 (set-face-attribute 'company-tooltip-common nil
                     :background "steelblue")
+;;; *.~ とかのバックアップファイルを作らない
+(setq make-backup-files nil)
+;;; .#* とかのバックアップファイルを作らない
+(setq auto-save-default nil)
+
 ;;neotree
 (global-set-key "\C-q" 'neotree-toggle)
 ;; neotree ウィンドウを表示する毎に current file のあるディレクトリを表示する
@@ -53,8 +60,7 @@
  '(ctags-update-other-options
    (list "--exclude=log" "--exclude=node_modules" "--exclude=tmp" "--exclude=stories" "--exclude=*.coffee" "--exclude='.git'" "--exclude='.github'" "--exclude='.storybook'" "--exclude='.temp'" "--exclude='front'" "--exclude='app/assets'" "--exclude='.svn'" "--exclude='SCCS'" "--exclude='RCS'" "--exclude='CVS'" "--exclude='EIFGEN'" "--exclude='.#*'" "--exclude='*~'"))
  '(package-selected-packages
-   (quote
-    (auto-complete-exuberant-ctags anything-exuberant-ctags yasnippet-snippets web-mode use-package smex smartparens rubocop robe rjsx-mode rbenv prodigy popwin plantuml-mode path-headerline-mode pallet package-utils nyan-mode neotree multiple-cursors markdown-mode magit madhat2r-theme init-loader idle-highlight-mode htmlize helm-projectile helm-git-grep helm-etags-plus helm-ag go-rename go-eldoc git-gutter flycheck-cask flow-minor-mode expand-region exec-path-from-shell drag-stuff ctags-update company-go company-flow coffee-mode auto-highlight-symbol))))
+   '(mozc auto-complete-exuberant-ctags anything-exuberant-ctags yasnippet-snippets yaml-mode web-mode use-package smex smartparens rubocop robe rjsx-mode rbenv prodigy popwin plantuml-mode path-headerline-mode pallet package-utils nyan-mode neotree multiple-cursors markdown-mode magit madhat2r-theme init-loader idle-highlight-mode htmlize helm-projectile helm-git-grep helm-etags-plus helm-ag go-rename go-eldoc git-gutter flycheck-cask flow-minor-mode expand-region exec-path-from-shell drag-stuff ctags-update csv-mode company-go company-flow coffee-mode auto-highlight-symbol)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
